@@ -5,27 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-color: #F3EAE3;
+        }
+        section{
+            display: flex;
+            width: 80%px;
+            border: 1px solid #fff;
+            border-radius: 16px;
+            background-color: #fff;
+        }
+        section img{
+            width: 50%;
+            border-radius: 16px 0 0 16px;
+        }
+        .product{
+            width: 400px;
+            border: 1px solid #fff;
+            padding: 32px;
+            border-radius: 0 16px 16px 0;
+        }
+        #perfume{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+        h1{
+            font-family: 'Fraunces';
+            font-weight: 700;
+            font-size: 64px;
+        }
+        p{
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 24px;
+        }
+        #price{
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+        #price h2{
+            font-family: 'Fraunces';
+            font-size: 48px;
+            color: hsl(158,36%,37%);
+            margin-right: 15px;
+        }
+        #price span{
+            font-family: 'Montserrat';
+            font-size: 20px;
+            text-decoration: line-through;
+        }
+        button{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-family: 'Montserrat';
+            color: #fff;
+            background-color:hsl(158,36%,37%);
+            border-radius: 10px;
+            border:0px solid #fff;
+            height: 60px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        #cart{
+            width: 24px;
+            margin-right: 10px;
+        }
+        
+    </style>
 </head>
 <body>
     <section>
-        <img src="imagenes/image-product-desktop.jpg" alt="">
-        <div>
-            <span>P E R F U M E</span>
+        <img src="imagenes-reto1/image-product-desktop.jpg" alt="">
+        <div class="product">
+            <span id="perfume">PERFUME</span>
             <h1>Gabrielle Essence Eau De Parfum
             </h1>
             <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfume-Creator for the House of CHANEL.</p>
-            <div>
-                <h1>$149.99</h1>
+            <div id="price">
+                <h2>$149.99</h2>
                 <span>$169.99</span>
             </div>
             <button>
-                <img src="imagenes/icon-cart.svg" alt="">
-                Add to cart</button>
+                <img id="cart" src="imagenes/icon-cart.svg" alt="">
+                Add to Cart</button>
         </div>
     </section>
     
 
 </body>
 </html>
+
+[Nombre](URL)

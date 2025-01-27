@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color:#0d1a2d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    section{
+        background-color: #15273f;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 
+        15px 30px 1px -5px #0c1729,/*derecha abajo negro*/
+        -15px 30px 1px -5px #0c1729,/*izquierda abajo negro*/
+        5px 1px 20px 30px #0c192c,/*derecha arriba blanco*/
+        -5px 30px 20px 30px #0c192c;/*izquierda abajo blanco*/               
+    }
+    #eq-div{
+        font-family: Poppins;
+    }
+    #eq-div p{
+        color: #8ba0bb;
+        width: 100%;
+        font-size: 30px;
+    }
+    #titulo-eq{
+        color: #fff;
+        font-size: 30px;
+    }
+    #price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ethereum{
+        display: flex;
+        align-items: center;
+    }
+    #ethereum img{
+        width: 30px;
+    }
+    #ethereum h1{
+        color: #5cdae6;
+        font-size: 30px;
+        margin-left: 16px;
+    }
+    #equilibrium-image{
+        border-radius: 16px;
+        width:;
+    }
+    #price span{
+        color: #8ba0bb;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    #reloj{
+        display: flex;
+        align-items: center;
+        width: 220px;
+    }
+    #reloj img{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    #reloj p{
+        color: #8ba0bb;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    footer{
+        font-family: Jost;
+        color: #8ba0bb;
+        display: flex;
+        align-items: center;
+    }
+    footer img{
+        border: 2px solid #fff;
+        border-radius: 50%;
+        width: 50px;
+    }
+    footer p{
+        font-size: 32px;
+        margin-left: 30px;
+        
+    }
+    footer span{
+        color: #fff;
+    }
+    hr {
+  border: none;
+  border-top: 1px solid #2e405a;
+  margin: 10px 0;
+}
+</style>
+<body>
+    <section>
+        <img id= "equilibrium-image" src="imagenes-reto2/image-equilibrium.jpg" alt="Imagen del Ethereum"/>
+        <div id="eq-div"> <!--Fuente a usar: Poppins-->
+            <h1 id="titulo-eq">Equilibrium #3429</h1>
+            <p>Our Equilibrium collection promotes<br> balance and calm.</p>
+            <div id="price">
+                <div id="ethereum">
+                <img src="imagenes-reto2/icon-ethereum.svg" alt="Ethereum"/>
+                <h1>0.041 ETH</h1>
+                </div>
+                <div id="reloj">
+                <img src="imagenes-reto2/icon-clock.svg" alt="">
+                <p>3 days left</p>
+                </div>
+            </div>   
+        </div>
+        <hr />
+        <footer>
+            <img src="imagenes-reto2/image-avatar.png" alt="Imagen de perfil Jules Wyvern"/>
+            <!--Fuente a usar: Jost-->
+            <p>Creation of <span>Jules Wyvern</span></p>
+        </footer>
+    </section>
+</body>
+</html>
